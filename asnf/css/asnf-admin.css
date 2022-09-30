@@ -1,0 +1,28 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ .asnf_setingWrapper {
+    margin: 10%;
+    border: 10px solid #7f1cb9;
+    padding: 30px;
+}
+
+.asnf_setingWrapper h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.asnf_setingWrapper p{
+    font-size: 15px;
+}
+
+.asnf_setingWrapper table {
+    width: 100%;
+    text-align: left;
+}
+
+.asnf_setingWrapper input#asnf_option_name {
+    width: 40%;
+}
