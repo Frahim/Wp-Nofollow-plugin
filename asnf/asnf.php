@@ -100,3 +100,12 @@ var_dump($asfn_attrebute);
 add_filter('the_content', 'asnf_nofollow');
 
 
+// Removes noreferrer on the frontend only, you will likely still see noreferrer in the code view of the editor
+
+function noref_formatter($content) {
+	$replace = array(" noreferrer" => "" ," noreferrer" => "");
+	
+	$new_content = strtr($content, $replace);
+	return $new_content;
+ }
+ add_filter('the_content', 'noref_formatter', 999);
